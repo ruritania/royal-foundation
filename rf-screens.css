@@ -79,6 +79,13 @@ body {
 	background-repeat: no-repeat;
 }
 
+
+#holding-2-group-1 #holding-screen-4 {
+	background-image: url("images/170926-rf-startscreen-66.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
+
 #panel-1 {
 	position: relative;
 	background-image: url("images/screens-01.png");
