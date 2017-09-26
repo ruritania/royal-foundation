@@ -17,6 +17,11 @@ body {
 	width: 3840px;
 	height: 2160px;
 }
+.screens-1-3 {
+	position: relative;
+	width: 1920px;
+	height: 3240px;
+}
 .columns-1 {
 	position: relative;
 	width: 1920px;
@@ -86,7 +91,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-#panel-1 {
+#group-1 #panel-1 {
 	position: relative;
 	background-image: url("images/screens-01.png");
     background-size: 5760px 4320px;
@@ -131,4 +136,62 @@ body {
 	background-image: url("images/screens-06.png");
 	background-size: 1920px 4320px;
 	background-repeat: no-repeat;
+}
+
+#data-group-1 #panel-1 {
+	position: relative;
+	background-image: url("images/170926-data-1.png");
+    background-size: 5760px 4320px;
+    background-repeat: no-repeat;
+}
+#data-group-2 #panel-1 {
+	position: relative;
+	background-image: url("images/170926-data-2.png");
+    background-size: 7680px 4320px;
+    background-repeat: no-repeat;
+}
+#data-group-3 #panel-1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url("images/170926-data-3-1.png");
+    background-size: 1920px 4320px;
+    background-repeat: no-repeat;
+}
+#data-group-3 #panel-2 {
+	position: absolute;
+	left: 1920px;
+	top: 0px;
+	position: relative;
+	background-image: url("images/170926-data-3-2.png");
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+}
+#data-group-3 #panel-3 {
+	position: absolute;
+	left: 1920px;
+	top: 1080px;
+	background-image: url("images/170926-data-3-3.png");
+    background-size: 1920px 3240px;
+    background-repeat: no-repeat;
+}
+#data-group-3 #panel-4 {
+	position: absolute;
+	left: 3840px;
+	top: 0px;
+	background-image: url("images/170926-data-3-4.png");
+    background-size: 1920px 4320px;
+    background-repeat: no-repeat;
+}
+#data-group-4 #panel-1 {
+	position: relative;
+	background-image: url("images/170926-data-4.png");
+    background-size: 5760px 4320px;
+    background-repeat: no-repeat;
+}
+#data-group-5 #panel-1 {
+	position: relative;
+	background-image: url("images/170926-data-5.png");
+    background-size: 5760px 4320px;
+    background-repeat: no-repeat;
 }
