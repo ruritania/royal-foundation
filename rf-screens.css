@@ -1,0 +1,81 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.screens-1 {
+	position: relative;
+	width: 1920px;
+	height: 1080px;
+}
+.screens-2-1 {
+	position: relative;
+	width: 3840px;
+	height: 1080px;
+}
+.screens-2-2 {
+	position: relative;
+	width: 3840px;
+	height: 2160px;
+}
+.columns-1 {
+	position: relative;
+	width: 1920px;
+	height: 4320px;
+}
+.columns-3 {
+	position: relative;
+	width: 5760px;
+	height: 4320px;
+}
+.columns-4 {
+	position: relative;
+	width: 7680px;
+	height: 4320px;
+}
+
+#panel-1 {
+	position: relative;
+	background-image: url("images/screens-01.png");
+    background-size: 5760px 4320px;
+    background-repeat: no-repeat;
+}
+#group-2 #panel-1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-image: url("images/screens-02.png");
+	background-size: 1920px 4320px;
+	background-repeat: no-repeat;
+}
+#group-2 #panel-2 {
+	position: absolute;
+	left: 1920px;
+	top: 0px;
+	background-image: url("images/screens-03.png");
+	background-size: 3840px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #panel-3 {
+	position: absolute;
+	left: 1920px;
+	top: 1080px;
+	background-image: url("images/screens-05.png");
+	background-size: 3840px 2160px;
+	background-repeat: no-repeat;
+}
+#group-2 #panel-4 {
+	position: absolute;
+	left: 1920px;
+	top: 3240px;
+	background-image: url("images/screens-04.png");
+	background-size: 3840px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #panel-5 {
+	position: absolute;
+	left: 5760px;
+	top: 0px;
+	background-image: url("images/screens-06.png");
+	background-size: 1920px 4320px;
+	background-repeat: no-repeat;
+}
