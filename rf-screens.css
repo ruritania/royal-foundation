@@ -32,6 +32,52 @@ body {
 	width: 7680px;
 	height: 4320px;
 }
+.row-3 {
+	position: relative;
+	width: 5760px;
+	height: 1080px;
+}
+.row-4 {
+	position: relative;
+	width: 7680px;
+	height: 1080px;
+}
+
+.holding {
+	background-color: rgb(0,0,0);
+	float: left;
+}
+
+#holding-group-1 #holding-screen-4 {
+	background-image: url("images/170926-rf-startscreen-66.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
+#holding-group-4 #holding-screen-4 {
+	background-image: url("images/170926-rf-startscreen-66.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
+#holding-group-5 #holding-screen-4 {
+	background-image: url("images/170926-rf-startscreen-66.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
+#holding-group-2 #holding-screen-5 {
+	background-image: url("images/170926-rf-startscreen-70.png");
+	background-size: 7680px 1080px;
+	background-repeat: no-repeat;
+}
+#holding-group-3 #holding-screen-4 {
+	background-image: url("images/170926-rf-startscreen-67.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
+#holding-group-3 #holding-screen-5 {
+	background-image: url("images/170926-rf-startscreen-71.png");
+	background-size: 5760px 1080px;
+	background-repeat: no-repeat;
+}
 
 #panel-1 {
 	position: relative;
