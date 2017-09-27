@@ -1,0 +1,26 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script>
+        var peer = new Peer('controller', { key: 'b91dh72milcv7vi' });
+
+        function publish(browser, message) {
+            var conn = peer.connect(browser);
+            console.log('connected to ' + browser);
+            conn.on('open', function () {
+                console.log('sending message ' + message + ' to ' + browser);
+                conn.send(message);
+                console.log('sent message ' + message + ' to ' + browser);
+            });
+        }
+
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="rf-screens.css">
+</head>
+<body>
+    <button onmousedown="publish('Data3','play')">send</button>
+</body>
+</html>

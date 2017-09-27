@@ -1,14 +1,38 @@
-<html>
-  <head>
-  	<link rel="stylesheet" type="text/css" href="rf-screens.css">
-  </head>
-  <body id="data-group-3">
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <script>
+
+        var peer = new Peer('Data3', { key: 'b91dh72milcv7vi' });
+        var conn = peer.connect('controller');
+        conn.on('open', function(){
+            conn.send('hi!');
+        });
+
+        //receive 
+        peer.on('connection',
+            function (conn) {
+                console.log('connected');
+                conn.on('data',
+                    function (data) {
+                        console.log('received' + data);
+                        if (data === 'play') {
+                            // Will print 'hi!'
+                            console.log('playing');
+                        }
+                    });
+            });
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="rf-screens.css">
+</head>
+<body id="data-group-3">
     <div id="panel-1" class="columns-1"></div>
     <div id="panel-2" class="screens-1">
-      <iframe width="1920" height="1080" src="https://www.youtube.com/embed/JjdIgUVj3Pw?playlist=JjdIgUVj3Pw&rel=0&showinfo=0&controls=0&loop=0&autoplay=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </div>
+        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/JjdIgUVj3Pw?playlist=JjdIgUVj3Pw&rel=0&showinfo=0&controls=0&loop=0&autoplay=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
     </div>
     <div id="panel-3" class="screens-1-3"></div>
     <div id="panel-4" class="columns-1"></div>
-  </body>
+</body>
 </html>
