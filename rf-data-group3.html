@@ -20,12 +20,12 @@
                 height: '1080',
                 width: '1920',
                 videoId: 'JjdIgUVj3Pw',
-                rel: 0,
-                controls: 0,
-                loop: 0,
-                autoplay: 0,
-                modestbranding: 1,
-                showinfo: 0,
+                rel: '0',
+                controls: '0',
+                loop: '0',
+                autoplay: '0',
+                modestbranding: '1',
+                showinfo: '0',
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -70,10 +70,8 @@
                    function (data) {
                        console.log('received' + data);
                        if (data === 'play') {
-                           // Will print 'hi!'
                            console.log('playing');
                            player.playVideo();// trigger the video <<<< 
-
                        }
                    });
            });
