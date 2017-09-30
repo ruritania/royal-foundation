@@ -4,6 +4,7 @@ body {
 }
 .screens-1 {
 	position: relative;
+    float: left;
 	width: 1920px;
 	height: 1080px;
 }
@@ -15,6 +16,11 @@ body {
 .screens-2-2 {
 	position: relative;
 	width: 3840px;
+	height: 2160px;
+}
+.screens-1-2 {
+	position: relative;
+	width: 1920px;
 	height: 2160px;
 }
 .screens-1-3 {
@@ -37,12 +43,12 @@ body {
 	width: 7680px;
 	height: 4320px;
 }
-.row-3 {
+.rows-3 {
 	position: relative;
 	width: 5760px;
 	height: 1080px;
 }
-.row-4 {
+.rows-4 {
 	position: relative;
 	width: 7680px;
 	height: 1080px;
@@ -89,95 +95,4 @@ body {
 	background-image: url("images/170926-rf-startscreen-66.png");
 	background-size: 5760px 1080px;
 	background-repeat: no-repeat;
-}
-
-#group-1 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-pres-1.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-#group-2 #panel-1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background-image: url("images/170926-pres-2.png");
-	background-size: 7680px 4320px;
-	background-repeat: no-repeat;
-}
-#group-3 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-pres-3.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-#group-4 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-pres-4.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-#group-5 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-pres-5.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-
-#data-group-1 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-data-1.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-#data-group-2 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-data-2.png");
-    background-size: 7680px 4320px;
-    background-repeat: no-repeat;
-}
-#data-group-3 #panel-1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	background-image: url("images/170926-data-3-1.png");
-    background-size: 1920px 4320px;
-    background-repeat: no-repeat;
-}
-#data-group-3 #panel-2 {
-	position: absolute;
-	left: 1920px;
-	top: 0px;
-	position: relative;
-	background-image: url("images/170926-data-3-2.png");
-    background-size: 1920px 1080px;
-    background-repeat: no-repeat;
-}
-#data-group-3 #panel-3 {
-	position: absolute;
-	left: 1920px;
-	top: 1080px;
-	background-image: url("images/170926-data-3-3.png");
-    background-size: 1920px 3240px;
-    background-repeat: no-repeat;
-}
-#data-group-3 #panel-4 {
-	position: absolute;
-	left: 3840px;
-	top: 0px;
-	background-image: url("images/170926-data-3-4.png");
-    background-size: 1920px 4320px;
-    background-repeat: no-repeat;
-}
-#data-group-4 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-data-4.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
-}
-#data-group-5 #panel-1 {
-	position: relative;
-	background-image: url("images/170926-data-5.png");
-    background-size: 5760px 4320px;
-    background-repeat: no-repeat;
 }

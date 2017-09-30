@@ -1,8 +1,110 @@
 <html>
   <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.14/peer.js"></script>
+    <script>
+
+       // ****** set up all the youtube 
+
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('video-player', {
+                height: '1810',
+                width: '3210',
+                videoId: 'QkyxI3IZ2sc',
+                rel: '0',
+                controls: '0',
+                loop: '0',
+                autoplay: '0',
+                modestbranding: '1',
+                showinfo: '0',
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            // do nothing
+            // event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                //setTimeout(stopVideo, 6000);
+                done = true;
+                // todo here we could trigger something else to happen when the video runs. 
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+
+        // ***** set up the communication
+
+       var peer = new Peer('Main2', { key: 'b91dh72milcv7vi' });
+       var conn = peer.connect('controller');
+       conn.on('open', function(){
+           conn.send('hi!');
+       });
+
+       //receive 
+       peer.on('connection',
+           function (conn) {
+               console.log('connected');
+               conn.on('data',
+                   function (data) {
+                       console.log('received' + data);
+                       if (data === 'play') {
+                           console.log('playing');
+                           player.playVideo();// trigger the video <<<< 
+                       }
+                   });
+           });
+
+
+    </script>
   	<link rel="stylesheet" type="text/css" href="rf-screens.css">
+  	<link rel="stylesheet" type="text/css" href="rf-main.css">
   </head>
-  <body id="group-2">
-    <div id="panel-1" class="columns-4"></div>
+  <body id="main-group-2">
+      <div class="columns-4">
+          <div id="row-1" class="rows-1">
+              <div id="screen-1" class="screens-1"><img src="images/170930-rf-main-2_01.png" width="1920" height="1080" /></div>
+              <div id="screen-2" class="screens-1"><img src="images/170930-rf-main-2_02.png" width="1920" height="1080" /></div>
+              <div id="screen-3" class="screens-1"><img src="images/170930-rf-main-2_03.png" width="1920" height="1080" /></div>
+              <div id="screen-4" class="screens-1"><img src="images/170930-rf-main-2_04.png" width="1920" height="1080" /></div>
+          </div>
+          <div id="column-2" class="screens-1-2">
+              <div id="screen-5" class="screens-1"><img src="images/170930-rf-main-2_05.png" width="1920" height="1080" /></div>
+              <div id="screen-9" class="screens-1"><img src="images/170930-rf-main-2_09.png" width="1920" height="1080" /></div>
+          </div>
+          <div id="group-2-video" class="screens-2-2">
+              <div id="video-player"></div>
+          </div>
+          <div id="column-4" class="screens-1-2">
+              <div id="screen-8" class="screens-1"><img src="images/170930-rf-main-2_08.png" width="1920" height="1080" /></div>
+              <div id="screen-12" class="screens-1"><img src="images/170930-rf-main-2_12.png" width="1920" height="1080" /></div>
+          </div>
+          <div id="row-4" class="rows-1">
+              <div id="screen-13" class="screens-1"><img src="images/170930-rf-main-2_13.png" width="1920" height="1080" /></div>
+              <div id="screen-14" class="screens-1"><img src="images/170930-rf-main-2_14.png" width="1920" height="1080" /></div>
+              <div id="screen-15" class="screens-1"><img src="images/170930-rf-main-2_15.png" width="1920" height="1080" /></div>
+              <div id="screen-16" class="screens-1"><img src="images/170930-rf-main-2_16.png" width="1920" height="1080" /></div>
+          </div>
+      </div>
   </body>
 </html>

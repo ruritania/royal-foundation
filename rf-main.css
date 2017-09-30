@@ -1,0 +1,29 @@
+.screens-1-2 {
+    float: left;
+}
+.screens-2-2 {
+    float: left;
+}
+#group-2-video {
+    position: relative;
+    background-image: url(images/170930-rf-main-2_video.png);
+    background-color: #00a8e1;
+}
+#group-2-video #video-player {
+    position: relative;
+    height: 1810px;
+    width: 3210px;
+    margin-top: 190px;
+    margin-left:  310px;
+    background-color: #00a8e1;
+    border: 1px solid #FFFFFF;
+}
+#main-group-3 #screen-4 {
+    background-image: url(images/170930-rf-main-3_04.png);
+}
+#main-group-3 #screen-4 #video-player {
+    position: relative;
+    margin: 150px;
+    width: 1620px;
+    height: 780px;
+}
