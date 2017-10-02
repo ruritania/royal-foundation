@@ -19,11 +19,32 @@
 
 
     <link rel="stylesheet" type="text/css" href="rf-screens.css">
+    <link rel="stylesheet" type="text/css" href="rf-controls.css">
 </head>
 <body>
-    <button onmousedown="publish('Main2','play')">Play Video 1</button>
-    <button onmousedown="publish('Main2','pause')">Pause Video 1</button>
-    <button onmousedown="publish('Main3','play')">Play Video 2</button>
-    <button onmousedown="publish('Main3','pause')">Pause Video 2</button>
+    <div class="ctrl-group">
+        <h1>Main Video 1</h1>
+        <p>Overview of the campaign</p>
+        <div class="btn-group">
+            <button onmousedown="publish('Main2','play')">> Play</button>
+            <button onmousedown="publish('Main2','pause')">|| Pause</button>
+        </div>
+    </div>
+    <div class="ctrl-group">
+        <h1>Main Video 2</h1>
+        <p>Marathon training day</p>
+        <div class="btn-group">
+            <button onmousedown="publish('Main3','play')">> Play</button>
+            <button onmousedown="publish('Main3','pause')">|| Pause</button>
+        </div>
+    </div>
+    <div class="ctrl-group">
+        <h1>Map Video</h1>
+        <p>Marathon video</p>
+        <div class="btn-group">
+            <button onmousedown="publish('Map3','play')">> Play</button>
+            <button onmousedown="publish('Map3','pause')">|| Pause</button>
+        </div>
+    </div>
 </body>
 </html>

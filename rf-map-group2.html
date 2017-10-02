@@ -19,13 +19,14 @@
                 height: '1080',
                 width: '1920',
                 videoId: '3bcSaBCZDvA',
-                rel: '0',
-                controls: '0',
-                volume: '0',
-                loop: '1',
-                autoplay: '1',
-                modestbranding: '1',
-                showinfo: '0',
+                playerVars: {
+                    rel: '0',
+                    controls: '0',
+                    loop: '1',
+                    autoplay: '1',
+                    modestbranding: '1',
+                    showinfo: '0'
+                },
                 events: {
                     'onReady': onPlayerReady,
                     'onStateChange': onPlayerStateChange
@@ -37,6 +38,7 @@
         function onPlayerReady(event) {
             // do nothing
             // event.target.playVideo();
+            player.mute();
         }
 
         // 5. The API calls this function when the player's state changes.
