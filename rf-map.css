@@ -1,0 +1,430 @@
+.columns-1 {
+    float: left;
+}
+ 
+/*@-webkit-keyframes fadeInOut { 0%,50% { opacity:0; } 10%,40% { opacity:1; } }
+@-moz-keyframes fadeInOut { 0%,50% { opacity:0; } 10%,40% { opacity:1; } }
+@keyframes fadeInOut { 0%,50% { opacity:0; } 10%,40% { opacity:1; } }*/
+
+@-webkit-keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+@-moz-keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+@keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+ 
+/*.fade-img8 {
+ opacity:0;
+ -webkit-animation:fadeInOut ease-in infinite;
+ -moz-animation:fadeInOut ease-in infinite;
+ animation:fadeInOut ease-in infinite;
+ 
+ -webkit-animation-duration:8s;
+ -moz-animation-duration:8s;
+ animation-duration:8s;
+} 
+.fade-img10 {
+ opacity:0;
+ -webkit-animation:fadeInOut ease-in infinite;
+ -moz-animation:fadeInOut ease-in infinite;
+ animation:fadeInOut ease-in infinite;
+ 
+ -webkit-animation-duration:10s;
+ -moz-animation-duration:10s;
+ animation-duration:10s;
+} 
+.fade-img12 {
+ opacity:0;
+ -webkit-animation:fadeInOut ease-in infinite;
+ -moz-animation:fadeInOut ease-in infinite;
+ animation:fadeInOut ease-in infinite;
+ 
+ -webkit-animation-duration:12s;
+ -moz-animation-duration:12s;
+ animation-duration:12s;
+} 
+.fade-img15 {
+ opacity:0;
+ -webkit-animation:fadeInOut ease-in infinite;
+ -moz-animation:fadeInOut ease-in infinite;
+ animation:fadeInOut ease-in infinite;
+ 
+ -webkit-animation-duration:15s;
+ -moz-animation-duration:15s;
+ animation-duration:15s;
+}*/
+
+.fade-img {
+ opacity:0;
+ -webkit-animation:fadeIn ease-in 1;
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;;
+ 
+ -webkit-animation-duration:3s;
+ -moz-animation-duration:3s;
+ animation-duration:3s;
+}
+ 
+.fade-img.delay-1 {
+-webkit-animation-delay: 1s;
+-moz-animation-delay: 1s;
+animation-delay: 1s;
+}
+.fade-img.delay-2 {
+-webkit-animation-delay: 3s;
+-moz-animation-delay: 3s;
+animation-delay: 3s;
+} 
+.fade-img.delay-3 {
+-webkit-animation-delay: 5s;
+-moz-animation-delay: 5s;
+animation-delay: 5s;
+}
+.fade-img.delay-4 {
+-webkit-animation-delay: 7s;
+-moz-animation-delay: 7s;
+animation-delay: 7s;
+}
+.fade-img.delay-5 {
+-webkit-animation-delay: 9s;
+-moz-animation-delay: 9s;
+animation-delay: 9s;
+}
+.fade-img.delay-6 {
+-webkit-animation-delay: 11s;
+-moz-animation-delay: 11s;
+animation-delay: 11s;
+}
+
+
+.screens-1 img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#group-1 #screen-1 {
+    background-image: url("images/170928-rf-map-1_01.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-2 {
+    background-image: url("images/170928-rf-map-1_02.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-3 {
+    background-image: url("images/170928-rf-map-1_03.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-4 {
+    background-image: url("images/170928-rf-map-1_04.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-5 {
+    background-image: url("images/170928-rf-map-1_05.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-6 {
+    background-image: url("images/170928-rf-map-1_06.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-7 {
+    background-image: url("images/170928-rf-map-1_07.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-8 {
+    background-image: url("images/170928-rf-map-1_08.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-9 {
+    background-image: url("images/170928-rf-map-1_09.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-10 {
+    background-image: url("images/170928-rf-map-1_10.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-11 {
+    background-image: url("images/170928-rf-map-1_11.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-1 #screen-12 {
+    background-image: url("images/170928-rf-map-1_12.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+
+#group-2 #screen-1 {
+    background-image: url("images/170928-rf-map-2_01.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-2 {
+    background-image: url("images/170928-rf-map-2_02.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-3 {
+    background-image: url("images/170928-rf-map-2_03.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-4 {
+    background-image: url("images/170928-rf-map-2_04.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-5 {
+    background-image: url("images/170928-rf-map-2_05.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-6 {
+    background-image: url("images/170928-rf-map-2_06.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-7 {
+    background-image: url("images/170928-rf-map-2_07.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-8 {
+    background-image: url("images/170928-rf-map-2_08.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-9 {
+    background-image: url("images/170928-rf-map-2_09.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-10 {
+    background-image: url("images/170928-rf-map-2_10.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-11 {
+    background-image: url("images/170928-rf-map-2_11.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-12 {
+    background-image: url("images/170928-rf-map-2_12.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-13 {
+    background-image: url("images/170928-rf-map-2_13.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-14 {
+    background-image: url("images/170928-rf-map-2_14.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-15 {
+    background-image: url("images/170928-rf-map-2_15.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-2 #screen-16 {
+    background-image: url("images/170928-rf-map-2_16.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+
+#group-3 #screen-1 {
+    background-image: url("images/170928-rf-map-3_01.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-2 {
+    background-image: url("images/170928-rf-map-3_02.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-3 {
+    background-image: url("images/170928-rf-map-3_03.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-4 {
+    background-image: url("images/170928-rf-map-3_04.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-5 {
+    background-image: url("images/170928-rf-map-3_05.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-6 {
+    background-image: url("images/170928-rf-map-3_06.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-7 {
+    background-image: url("images/170928-rf-map-3_07.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-8 {
+    background-image: url("images/170928-rf-map-3_08.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-9 {
+    background-image: url("images/170928-rf-map-3_09.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-10 {
+    background-image: url("images/170928-rf-map-3_10.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-11 {
+    background-image: url("images/170928-rf-map-3_11.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-3 #screen-12 {
+    background-image: url("images/170928-rf-map-3_12.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+
+#group-4 #screen-1 {
+    background-image: url("images/170928-rf-map-4_01.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-2 {
+    background-image: url("images/170928-rf-map-4_02.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-3 {
+    background-image: url("images/170928-rf-map-4_03.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-4 {
+    background-image: url("images/170928-rf-map-4_04.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-5 {
+    background-image: url("images/170928-rf-map-4_05.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-6 {
+    background-image: url("images/170928-rf-map-4_06.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-7 {
+    background-image: url("images/170928-rf-map-4_07.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-8 {
+    background-image: url("images/170928-rf-map-4_08.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-9 {
+    background-image: url("images/170928-rf-map-4_09.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-10 {
+    background-image: url("images/170928-rf-map-4_10.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-11 {
+    background-image: url("images/170928-rf-map-4_11.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-4 #screen-12 {
+    background-image: url("images/170928-rf-map-4_12.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+
+#group-5 #screen-1 {
+    background-image: url("images/170928-rf-map-5_01.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-2 {
+    background-image: url("images/170928-rf-map-5_02.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-3 {
+    background-image: url("images/170928-rf-map-5_03.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-4 {
+    background-image: url("images/170928-rf-map-5_04.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-5 {
+    background-image: url("images/170928-rf-map-5_05.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-6 {
+    background-image: url("images/170928-rf-map-5_06.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-7 {
+    background-image: url("images/170928-rf-map-5_07.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-8 {
+    background-image: url("images/170928-rf-map-5_08.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-9 {
+    background-image: url("images/170928-rf-map-5_09.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-10 {
+    background-image: url("images/170928-rf-map-5_10.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-11 {
+    background-image: url("images/170928-rf-map-5_11.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
+#group-5 #screen-12 {
+    background-image: url("images/170928-rf-map-5_12.png");
+	background-size: 1920px 1080px;
+	background-repeat: no-repeat;
+}
