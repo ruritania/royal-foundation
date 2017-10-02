@@ -6,7 +6,7 @@
 }
 #group-2-video {
     position: relative;
-    background-image: url(images/170930-rf-main-2_video.png);
+    /* background-image: url(images/170930-rf-main-2_video.png); */
     background-color: #00a8e1;
 }
 #group-2-video #video-player {
