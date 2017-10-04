@@ -1,28 +1,32 @@
-.chart-bg-w {
-	background-image: url("chart/170928_chart-bg-w.png");
-	background-size: 1920px 2160px;
-}
-.chart-bg-m {
-	background-image: url("chart/170928_chart-bg-m.png");
-	background-size: 1920px 2160px;
-}
-.chart-block {
+.screens-1 {
     position: relative;
-    width: 1920px;
-    height: 2160px;
 }
-.chart-block-data {
-    position: relative;
-    width: 5760px;
-    height: 2160px;
+.chart-women {
+    background-color: #00a8e1;
 }
-.img-data {
+.chart-men {
+    background-color: #000;
+}
+.chart-label {
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.columns-1 {
-    float: left;
+.fill-block {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.chart-women .fill-block {
+    background-image: url(images/171002-rf-chart-fill-women.png);
+    background-position:  left top;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    height: 1080px;
+}
+
+.fill-women-52 {
+    width: 1486px;
 }
  
 @-webkit-keyframes fadeIn { from { opacity:0; left:-1020px; } to { opacity:1; left: 0px; } }
