@@ -24,14 +24,186 @@
     background-repeat: no-repeat;
     height: 1080px;
 }
+.chart-men .fill-block {
+    background-image: url(images/171002-rf-chart-fill-men.png);
+    background-position:  left top;
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    height: 1080px;
+}
+
 
 .fill-women-52 {
     width: 1486px;
+     -webkit-animation:slide52 ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:slide52 ease-in 1;
+     animation:slide52 ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:1s;
+     -moz-animation-duration:1s;
+     animation-duration:1s;
+
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.label-women-52 {
+     -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:fadeOut ease-in 1;
+     animation:fadeOut ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:1s;
+     -moz-animation-duration:1s;
+     animation-duration:1s;
+
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+.fill-women-61 {
+    width: 0px;
+     -webkit-animation:slide61 ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:slide61 ease-out 1;
+     animation:slide61 ease-out 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:3s;
+     -moz-animation-duration:3s;
+     animation-duration:3s;
+
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.label-women-61 {
+    opacity: 0;
+     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:fadeIn ease-in 1;
+     animation:fadeIn ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:1s;
+     -moz-animation-duration:1s;
+     animation-duration:1s;
+
+    -webkit-animation-delay: 7s;
+    -moz-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+
+.fill-men-45 {
+    width: 0px;
+     -webkit-animation:slide45 ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:slide45 ease-in 1;
+     animation:slide45 ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:4s;
+     -moz-animation-duration:4s;
+     animation-duration:4s;
+
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.label-men-45 {
+     -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:fadeOut ease-in 1;
+     animation:fadeOut ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:1s;
+     -moz-animation-duration:1s;
+     animation-duration:1s;
+
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.fill-men-60 {
+    width: 0px;
+     -webkit-animation:slide60 ease-out 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:slide60 ease-out 1;
+     animation:slide60 ease-out 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:3s;
+     -moz-animation-duration:3s;
+     animation-duration:3s;
+
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    animation-delay: 14s;
+}
+.label-men-60 {
+    opacity: 0;
+     -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+     -moz-animation:fadeIn ease-in 1;
+     animation:fadeIn ease-in 1;
+
+     -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+     -moz-animation-fill-mode:forwards;
+     animation-fill-mode:forwards;
+
+     -webkit-animation-duration:1s;
+     -moz-animation-duration:1s;
+     animation-duration:1s;
+
+    -webkit-animation-delay: 17s;
+    -moz-animation-delay: 17s;
+    animation-delay: 17s;
 }
  
-@-webkit-keyframes fadeIn { from { opacity:0; left:-1020px; } to { opacity:1; left: 0px; } }
-@-moz-keyframes fadeIn { from { opacity:0; left:-1920px; } to { opacity:1; left: 0px; } }
-@keyframes fadeIn { from { opacity:0; left:-1920px; } to { opacity:1; left: 0px; } }
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } } 
+
+@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+@keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
+
+@-webkit-keyframes slide52 { from { width:1486px; } to { width:1920px } }
+@-moz-keyframes slide52 { from { width:1486px; } to { width:1920px } }
+@keyframes slide52 { from { width:1486px; } to { width:1920px } }
+
+@-webkit-keyframes slide61 { from { width:0px; } to { width:1815px } }
+@-moz-keyframes slide61 { from { width:0px; } to { width:1815px } }
+@keyframes slide61 { from { width:0px; } to { width:1815px } }
+
+@-webkit-keyframes slide45 { from { width:0px; } to { width:1920px } }
+@-moz-keyframes slide45 { from { width:0px; } to { width:1920px } }
+@keyframes slide45 { from { width:0px; } to { width:1920px } }
+
+@-webkit-keyframes slide60 { from { width:0px; } to { width:1540px } }
+@-moz-keyframes slide60 { from { width:0px; } to { width:1540px } }
+@keyframes slide60 { from { width:0px; } to { width:1540px } }
  
 .fade-in {
  opacity:0;  /* make things invisible upon start */
