@@ -14,6 +14,7 @@
         // 3. This function creates an <iframe> (and YouTube player)
         //    after the API code downloads.
         var player;
+		var player2;
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('video-player1', {
                 height: '1080',
@@ -32,7 +33,7 @@
                     'onStateChange': onPlayerStateChange
                 }
             });
-            player = new YT.Player('video-player2', {
+            player2 = new YT.Player('video-player2', {
                 height: '1080',
                 width: '1920',
                 videoId: 'FrI2qBEl-4k',
@@ -56,6 +57,7 @@
             // do nothing
             // event.target.playVideo();
             player.mute();
+			player2.mute();
         }
 
         // 5. The API calls this function when the player's state changes.
@@ -71,6 +73,9 @@
         }
         function stopVideo() {
             player.stopVideo();
+        }
+		function stopVideo2() {
+            player2.stopVideo();
         }
 
         // ***** set up the communication
@@ -91,7 +96,9 @@
                        if (data === 'play') {
                            console.log('playing');
                            player.playVideo();// trigger the video <<<< 
-                       }
+                       } else if(data == 'pause'){
+							player.pause();
+					   }
                    });
            });
 
