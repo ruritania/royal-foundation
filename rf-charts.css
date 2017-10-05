@@ -47,9 +47,9 @@
      -moz-animation-duration:1s;
      animation-duration:1s;
 
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-    animation-delay: 3s;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    animation-delay: 10s;
 }
 .label-women-52 {
      -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -64,9 +64,9 @@
      -moz-animation-duration:1s;
      animation-duration:1s;
 
-    -webkit-animation-delay: 2s;
-    -moz-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    animation-delay: 9s;
 }
 
 
@@ -84,9 +84,9 @@
      -moz-animation-duration:3s;
      animation-duration:3s;
 
-    -webkit-animation-delay: 4s;
-    -moz-animation-delay: 4s;
-    animation-delay: 4s;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    animation-delay: 11s;
 }
 .label-women-61 {
     opacity: 0;
@@ -102,9 +102,9 @@
      -moz-animation-duration:1s;
      animation-duration:1s;
 
-    -webkit-animation-delay: 7s;
-    -moz-animation-delay: 7s;
-    animation-delay: 7s;
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    animation-delay: 14s;
 }
 
 
@@ -122,9 +122,9 @@
      -moz-animation-duration:4s;
      animation-duration:4s;
 
-    -webkit-animation-delay: 10s;
-    -moz-animation-delay: 10s;
-    animation-delay: 10s;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
 }
 .label-men-45 {
      -webkit-animation:fadeOut ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
@@ -139,9 +139,9 @@
      -moz-animation-duration:1s;
      animation-duration:1s;
 
-    -webkit-animation-delay: 10s;
-    -moz-animation-delay: 10s;
-    animation-delay: 10s;
+    -webkit-animation-delay: 15s;
+    -moz-animation-delay: 15s;
+    animation-delay: 15s;
 }
 
 .fill-men-60 {
@@ -158,9 +158,9 @@
      -moz-animation-duration:3s;
      animation-duration:3s;
 
-    -webkit-animation-delay: 14s;
-    -moz-animation-delay: 14s;
-    animation-delay: 14s;
+    -webkit-animation-delay: 19s;
+    -moz-animation-delay: 19s;
+    animation-delay: 19s;
 }
 .label-men-60 {
     opacity: 0;
@@ -176,9 +176,9 @@
      -moz-animation-duration:1s;
      animation-duration:1s;
 
-    -webkit-animation-delay: 17s;
-    -moz-animation-delay: 17s;
-    animation-delay: 17s;
+    -webkit-animation-delay: 22s;
+    -moz-animation-delay: 22s;
+    animation-delay: 22s;
 }
  
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
