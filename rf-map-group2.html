@@ -15,10 +15,27 @@
         //    after the API code downloads.
         var player;
         function onYouTubeIframeAPIReady() {
-            player = new YT.Player('video-player', {
+            player = new YT.Player('video-player1', {
                 height: '1080',
                 width: '1920',
-                videoId: '3bcSaBCZDvA',
+                videoId: 'R5UJsh9fVr0',
+                playerVars: {
+                    rel: '0',
+                    controls: '0',
+                    loop: '1',
+                    autoplay: '1',
+                    modestbranding: '1',
+                    showinfo: '0'
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+            player = new YT.Player('video-player2', {
+                height: '1080',
+                width: '1920',
+                videoId: 'FrI2qBEl-4k',
                 playerVars: {
                     rel: '0',
                     controls: '0',
@@ -86,67 +103,67 @@
   <body id="group-2" class="columns-4">
       <div id="column-1" class="columns-1">
           <div id="screen-1" class="screens-1">
-              <img src="images/171004_social_callouts-01.png" width="1920" height="1080" class="fade-img delay-4" />
+              <div id="video-player1"></div>
          </div>
           <div id="screen-5" class="screens-1">
-              <img src="images/170929-rf-marathon-10.jpg" width="1920" height="1080" class="fade-img delay-1" />
+              <img src="images/Image%2014.jpg" width="1920" height="1080" class="fade-img delay-1" />
          </div>
           <div id="screen-9" class="screens-1">
-              <img src="images/170929-rf-marathon-11.jpg" width="1920" height="1080" class="fade-img delay-6" />
+              <img src="images/Image%2023.jpg" width="1920" height="1080" class="fade-img delay-6" />
          </div>
           <div id="screen-13" class="screens-1">
-              <img src="images/170929-rf-marathon-12.jpg" width="1920" height="1080" class="fade-img delay-3" />
+              <img src="images/Image%2034.jpg" width="1920" height="1080" class="fade-img delay-3" />
               <img src="images/170928-rf-river-2_13.png" width="1920" height="1080" />
          </div>
       </div>
       <div id="column-2" class="columns-1">
           <div id="screen-2" class="screens-1">
-              <img src="images/170929-rf-marathon-13.jpg" width="1920" height="1080" class="fade-img delay-2" />
+              <img src="images/Image%203.jpg" width="1920" height="1080" class="fade-img delay-2" />
               <img src="images/170928-rf-river-2_02.png" width="1920" height="1080" />
          </div>
           <div id="screen-6" class="screens-1">
-              <img src="images/170929-rf-marathon-14.jpg" width="1920" height="1080" class="fade-img delay-6" />
+              <img src="images/Image%2015.jpg" width="1920" height="1080" class="fade-img delay-6" />
               <img src="images/170928-rf-river-2_06.png" width="1920" height="1080" />
          </div>
           <div id="screen-10" class="screens-1">
-              <img src="images/170929-rf-marathon-15.jpg" width="1920" height="1080" class="fade-img delay-4" />
+              <img src="images/Image%2024.jpg" width="1920" height="1080" class="fade-img delay-4" />
               <img src="images/170928-rf-river-2_10.png" width="1920" height="1080" />
          </div>
           <div id="screen-14" class="screens-1">
-              <img src="images/170929-rf-marathon-23.jpg" width="1920" height="1080" class="fade-img delay-5" />
+              <img src="images/Image%2035.jpg" width="1920" height="1080" class="fade-img delay-5" />
               <img src="images/170928-rf-river-2_14.png" width="1920" height="1080" />
           </div>
       </div>
       <div id="column-3" class="columns-1">
           <div id="screen-3" class="screens-1">
-              <img src="images/170929-rf-marathon-16.jpg" width="1920" height="1080" class="fade-img delay-5" />
+              <img src="images/Image%204.jpg" width="1920" height="1080" class="fade-img delay-5" />
               <img src="images/170928-rf-river-2_03.png" width="1920" height="1080" />
          </div>
           <div id="screen-7" class="screens-1">
-              <img src="images/170929-rf-marathon-17.jpg" width="1920" height="1080" class="fade-img delay-2" />
+              <img src="images/171005-map-data-3.png" width="1920" height="1080" class="fade-img delay-2" />
               <img src="images/170928-rf-river-2_07.png" width="1920" height="1080" />
          </div>
           <div id="screen-11" class="screens-1">
-              <div id="video-player"></div>
+              <div id="video-player2"></div>
         </div>
           <div id="screen-15" class="screens-1">
-              <img src="images/170929-rf-marathon-18.jpg" width="1920" height="1080" class="fade-img delay-3" />
+              <img src="images/Image%2036.jpg" width="1920" height="1080" class="fade-img delay-3" />
          </div>
       </div>
       <div id="column-4" class="columns-1">
           <div id="screen-4" class="screens-1">
-              <img src="images/170929-rf-marathon-19.jpg" width="1920" height="1080" class="fade-img delay-1" />
+              <img src="images/Image%205.jpg" width="1920" height="1080" class="fade-img delay-1" />
               <img src="images/170928-rf-river-2_04.png" width="1920" height="1080" />
          </div>
           <div id="screen-8" class="screens-1">
-              <img src="images/170929-rf-marathon-20.jpg" width="1920" height="1080" class="fade-img delay-4" />
+              <img src="images/Image%2017.jpg" width="1920" height="1080" class="fade-img delay-4" />
               <img src="images/170928-rf-river-2_08.png" width="1920" height="1080" />
          </div>
           <div id="screen-12" class="screens-1">
-              <img src="images/170929-rf-marathon-21.jpg" width="1920" height="1080" class="fade-img delay-2" />
+              <img src="images/Image%2025.jpg" width="1920" height="1080" class="fade-img delay-2" />
          </div>
           <div id="screen-16" class="screens-1">
-              <img src="images/170929-rf-marathon-22.jpg" width="1920" height="1080" class="fade-img delay-6" />
+              <img src="images/Image%2037.jpg" width="1920" height="1080" class="fade-img delay-6" />
          </div>
       </div>
   </body>
